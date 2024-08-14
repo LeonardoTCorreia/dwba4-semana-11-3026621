@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="img/favicon.ico">
+  <title>Contato</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html" target="_top">HOME</a>
+    <a href="Eventos.html" target="_top">EVENTOS</a>
+    <a href="Contato.html" target="_top">CONTATO</a>
+    <div class="dropdown">
+      <button class="dropbtn">CURSOS ▼ </button>
+      <div class="dropdown-content">
+        <a href="ads.html">Análise e Desenvolvimento de Sistemas</a>
+        <a href="EngProd.html">Engenharia de Produção</a>
+        <a href="Letras.html">Letras</a>
+      </div>
+    </div> 
+    <a href="entrar.html" target="_top">ENTRAR</a>
+    <a href="Sobre.html" target="_top" style="float:right;">SOBRE</a>
+  </div>
+  <div class="green-section">
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Logotipo">
+    </div>
+  </div>   <h1><strong>Mande uma Mensagem</strong></h1> 
+
+  <form>
+    <ul>
+      <li><label for="name">Nome: </label>
+        <input type="text" name="name" id="name" required>
+      </li>
+      <li>
+        <label for="email">E-mail: </label> <br> 
+        <input type="email" name="email" id0="email" required> <br> <br>
+      </li>
+      <li>
+        <label for="phone">Telefone: (99) 99999-9999 </label> <br> 
+        <input type="tel" name="phone" id="phone" required>  <br> <br>
+      </li> 
+      <li><label for="assunto">Assunto: </label> <br>
+        <select name="assunto" required> 
+          <option value="selecione">-- Selecione --</option> <br> <br>
+          <option value="reclamar">Reclamação</option>
+          <option value="sugerir">Sugestão</option>
+        </select></li> <br> 
+      <li>Mensagem: <br> 
+        <textarea name="message" id="message" cols="50" rows="2" required></textarea></li>
+      <li>
+        <fieldset>
+            <legend>Opções de Resposta: </legend>
+            <input name="e-mail" type="checkbox" value="email" required>E-mail
+            <input name="telefone" type="checkbox" value="telefone" required>Telefone
+        </fieldset>
+      </li>
+      <button class="buttons" type="submit"><span class="p-white" >Enviar</span></button> <br> <br>
+    </ul>
+ </form>
+
+
+  <div class="imagem-container">
+    <a href="https://www.facebook.com/ifsppirituba">
+      <img src="img/facebook.png" width="30px" alt="Facebook">
+      <div class="overlay">IFSP Facebook</div>
+    </a>
+  </div> <br >
+
+  <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p> <br />
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

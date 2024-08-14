@@ -1,0 +1,110 @@
+  <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="img/favicon.ico">
+  <title>Eventos</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html" target="_top">HOME</a>
+    <a href="Eventos.html" target="_top">EVENTOS</a>
+    <a href="Contato.html" target="_top">CONTATO</a>
+    <div class="dropdown">
+      <button class="dropbtn">CURSOS ▼ </button>
+      <div class="dropdown-content">
+        <a href="ads.html">Análise e Desenvolvimento de Sistemas</a>
+        <a href="EngProd.html">Engenharia de Produção</a>
+        <a href="Letras.html">Letras</a>
+      </div>
+    </div> 
+    <a href="entrar.html" target="_top">ENTRAR</a>
+    <a href="Sobre.html" target="_top" style="float:right;">SOBRE</a>
+  </div>
+
+  <div class="green-section">
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Logotipo">
+    </div>
+  </div> 
+  <h1><strong>Inscreva-se</strong></h1> <br>
+
+  <article>
+    <form name="InscriçãoEvento">
+      <section>
+        <fieldset>        
+          <legend>Evento: </legend>
+          <select name="evento" required> 
+            <option value="selecione">-- Selecione --</option>
+            <option value="voe">Voe sem asas</option>
+            <option value="festa">Festa Junina</option>
+            <option value="tecnologia">Semana de tecnologia</option> 
+          </select>        
+        </fieldset>
+      </section>
+
+      <section>
+        <fieldset style="margin-top: 20px;">           
+          <legend>Informações de acesso: </legend> <br>
+          <label for="usuario">Usuário: </label>
+          <input type="text" name="usuario" id="name" required> <br> <br>
+          <label for="senha">Senha: </label>
+          <input type="password" name="senha" id="senha" required> <br> <br>
+          <label for="confirmar">Confirmar senha: </label>
+          <input type="password" name="confirma" id="confirmaSenha" required> <br>
+        </fieldset>
+      </section>
+
+      <section>
+        <fieldset style="margin-top: 20px;">       
+          <legend>Informações Pessoais: </legend> <br>
+          <label for="nome">Nome Completo: </label>
+          <input type="text" name="nome" id="nomeCompleto" required> <br> <br>
+          <label for="e-mail">E-mail: </label>
+          <input type="email" name="e-mail" id="e-mail" required> <br> <br>
+          <label for="celular">Celular: </label>
+          <input type="tel" name="celular" id="cel" required> (99) 99999-9999 <br> <br>
+        </fieldset>  
+      </section>
+
+      <section>
+        <fieldset style="margin-top: 20px;">        
+          <legend>Sexo: </legend> 
+          <input type="radio" name="sexo" value="masculino" required> Masculino
+          <input type="radio" name="sexo" value="feminino" required> Feminino 
+        </fieldset>
+      </section>
+
+      <section>
+        <fieldset style="margin-top: 20px;">
+          <label for="data">Data de Nascimento: </label>
+          <input type="date" name="data" required> <br> <br>
+          <label for="cor">Cor Favorita: </label>
+          <input type="color" name="cor" required><br> <br>
+          <label for="perfil">Perfil no GitHub: </label>
+          <input type="url" name="github" required> <br> <br>
+        </fieldset>
+      </section>
+      <div class="container">
+        <button class="buttons" type="submit"><span class="p-white" >Inscrever-se</span></button> <br> <br>
+        <button class="buttons" type="reset"><span class="p-white" >Limpar</button> <br> <br> <br>
+      </div>
+    </form>
+  </article> 
+
+  <div class="imagem-container">
+    <a href="https://www.facebook.com/ifsppirituba">
+      <img src="img/facebook.png" width="30px" alt="Facebook">
+      <div class="overlay">IFSP Facebook</div>
+    </a>
+  </div> <br >
+
+  <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p> <br />
+  <script src="script.js"></script>
+</body>
+
+</html>

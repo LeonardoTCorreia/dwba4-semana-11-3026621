@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens no contêiner */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: flex-start; /* Alinha verticalmente as imagens */
+    gap: 20px; /* Espaço entre as imagens */
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens no contêiner */
+    align-items: flex-start; /* Alinha verticalmente as imagens */
+    gap: 20px; /* Espaço entre as imagens */
+    width: 100%;
+}
+
+.imagem-eleicoes, .imagem-snct, .imagem-residencia, .imagem-maratona {
+    width: 50%;
+    text-align: center;
+}
+
+.imagem-eleicoes img, .imagem-snct img {
+    width: 50%; /* Ajusta a imagem para ocupar 100% da largura do contêiner */
+    display: block; /* Remove espaços indesejados ao redor da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.imagem-residencia img {
+  width: 40%; /* Ajusta a imagem para ocupar 30% da largura do contêiner */
+  display: block; /* Remove espaços indesejados ao redor da imagem */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.imagem-maratona img {
+  width: 40%; /* Ajusta a imagem para ocupar 30% da largura do contêiner */
+  display: block; /* Remove espaços indesejados ao redor da imagem */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.imagem-eleicoes p, .imagem-snct p, .imagem-residencia p, .imagem-maratona p {
+  margin: 0; /* Remove margens padrão */
+  text-align: center; /* Alinha o texto no centro */
+  font-size: 15px;
+  font-family: Arial, sans-serif; 
+}
+
+.imagem-eleicoes p:first-of-type, .imagem-snct p:first-of-type, .imagem-residencia p:first-of-type, .imagem-maratona p:firts-of-type{
+  text-align: center; /* Centraliza o primeiro parágrafo */
+  margin-top: 40px ;  
+}
+
+.imagem-residencia, .imagem-maratona {
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.imagem-eleicoes p:first-of-type, .imagem-snct p:first-of-type, .imagem-residencia p:first-of-type, .imagem-maratona p:first-of-type {
+    margin-top: 20px; /* Adiciona margem superior aos parágrafos */
+}
+
+.row-extra {
+  display: flex;
+  justify-content: flex-start; /* Centraliza as imagens no contêiner */
+  align-items: flex-start; /* Alinha verticalmente as imagens */
+  gap: 20px; /* Espaço entre as imagens */
+  width: 100%;
+  margin-top: 20px;
+}
