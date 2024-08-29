@@ -52,48 +52,57 @@ body {
 }
 
 .navbar {
-  overflow: hidden;
+  display: flex; /* Usa flexbox para alinhar itens horizontalmente */
+  justify-content: space-between; /* Espaça os itens ao longo da barra */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
   background-color: #333;
-  width: 100%;
-  top: 0;
+  padding: 0 20px; /* Adiciona espaço interno ao menu */
+  height: 60px; /* Altura do menu */
+  position: relative; /* Para posicionar dropdowns corretamente */
   z-index: 1;
 }
 
 .navbar a {
-  float: left;
-  font-size: 16px;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 20px;
   text-decoration: none;
+  font-size: 16px;
+  display: block; /* Faz com que o link ocupe toda a área de clique */
 }
 
 .dropdown {
-  float: left;
-  overflow: hidden;
-  z-index: 1;
+  position: relative;
+
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 16px;
   border: none;
-  outline: none;
   color: white;
-  padding: 14px 16px;
+  padding: 14px 20px;
   background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  z-index: 1;
+  cursor: pointer;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
 
+.navbar .right {
+  margin-left: auto;
+  padding-left: 20px; /* Adiciona um espaço à esquerda do link 'Sobre' */
+}
+
+/* Remove a margem esquerda dos links do menu, exceto para o link 'Sobre' */
+.navbar a:not(.right) {
+  margin-left: 0;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 40px;
+  top: 100%;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -101,13 +110,10 @@ body {
 }
 
 .dropdown-content a {
-  float: none;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
-  z-index: 2;
 }
 
 .dropdown-content a:hover {
@@ -216,3 +222,27 @@ li select {
 
   line-height: 0.1;
 }
+
+/*Form de Login*/
+.small-image {
+  max-width: 70px;
+  margin-bottom: 20px;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+.form-check {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.btn-block {
+  margin-top: 10px;
+}
+
+
+

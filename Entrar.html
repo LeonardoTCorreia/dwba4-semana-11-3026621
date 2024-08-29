@@ -1,63 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="icon" href="img/favicon.ico">
   <title>Entrar</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css" />
- </head>
+</head>
 
 <body>
+  <div id="top"></div>
   <div class="navbar">
-    <a href="index.html" target="_top">HOME</a>
-    <a href="Eventos.html" target="_top">EVENTOS</a>
-    <a href="Contato.html" target="_top">CONTATO</a>
+    <a href="index.html">HOME</a>
+    <a href="Eventos.html">EVENTOS</a>
+    <a href="Contato.html">CONTATO</a>
     <div class="dropdown">
-      <button class="dropbtn">CURSOS ▼ </button>
+      <button class="dropbtn">CURSOS ▼</button>
       <div class="dropdown-content">
         <a href="ads.html">Análise e Desenvolvimento de Sistemas</a>
         <a href="EngProd.html">Engenharia de Produção</a>
         <a href="Letras.html">Letras</a>
       </div>
     </div> 
-    <a href="Entrar.html" target="_top">ENTRAR</a>
-    <a href="Sobre.html" target="_top" style="float:right;">SOBRE</a>
+    <a href="Entrar.html">ENTRAR</a>
+    <a href="Sobre.html" class="right">SOBRE</a>
   </div>
   <div class="green-section">
     <div class="logo">
       <img src="img/logo.jpg" alt="Logotipo">
     </div>
-  </div>   <h1><strong>Entrar</strong></h1>
+  </div>  
+  
 
-  <form>
-    <div class="campos"> <br> 
-        <label for="nme">Usuário</label>
-        <input type="text" name="name" id="name" required> <br><br>
-    </div> <br> <br>
-    <div class="campos"> <br>
-      <label for="senha">Senha</label>
-      <input type="password" name="password" id="password" required><br><br>
-    </div> <br> <br>
-    <div class="campos-maior">
-      <div class=""> <br> <br>
-        <button class="buttons-menor" type="submit"><span class="p-white" >Entrar</span></button> <br> <br>
-        <a href="">Esqueci a senha</a><br> <br> <br> <br> <br>
+  <!-- Seção do Formulário -->
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <!-- Imagem Centralizada e Reduzida Acima do Título -->
+            <div class="text-center mb-3">
+              <img src="img/ifsp.png" alt="Ícone" class="img-fluid small-image">
+            </div>
+            <h2 class="text-center mb-4"><strong>Faça Login</strong></h2>
+            <form>
+              <!-- Campo Email -->
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Seu email" required>
+              </div>
+              <!-- Campo Senha -->
+              <div class="form-group">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Senha" required>
+              </div>
+              <!-- Lembrar de Mim -->
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="rememberMe">
+                <label class="form-check-label" for="rememberMe">Lembrar de mim</label>
+              </div>
+              <!-- Esqueci a Senha -->
+              <div class="forgot-password">
+                <a href="#">Esqueci a senha</a>
+              </div>
+              <!-- Botão Entrar -->
+              <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-  </form>
+  </div>
+  
+
+  <!-- Seção de Rodapé -->
   <br><br><br><br>
   <div class="imagem-container">
     <a href="https://www.facebook.com/ifsppirituba">
       <img src="img/facebook.png" width="30px" alt="Facebook">
       <div class="overlay">IFSP Facebook</div>
     </a>
-  </div> <br >
+  </div>
+  
+  <br>
 
-  <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p> <br />
+  <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100</p> 
+  <br />
+
   <script src="script.js"></script>
-
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
+
+
