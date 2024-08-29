@@ -1,10 +1,10 @@
-<h1>Desenvolvimento Web: Cliente (Semana 09)</h1>
+<h1>Desenvolvimento Web: Cliente (Semana 11)</h1>
 
-Manipulando Páginas com JavaScript (DOM).
+Utilizando React.
 
-A aplicação deverá possuir as características presentes neste [vídeo](https://www.youtube.com/watch?v=eNfT1uLTzSI)
+A aplicação deverá possuir as características presentes nesta [imagem](https://drive.google.com/file/d/15bw9XTG2oJ2jo6Kw_lLHhnBkcVoqiQ9h/view)
 
-[Acesse o site](https://leonardotcorreia.github.io/dwba4-semana-09-3026621/)
+[Acesse o site](https://leonardotcorreia.github.io/dwba4-semana-11-3026621/index.html)
 
 
 
